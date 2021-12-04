@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 
 function Note(props) {
  
@@ -8,7 +9,9 @@ function Note(props) {
       <h1>{props.title}</h1>
       <p>{props.content}</p>
       <button onClick={()=>{
-        props.deleteHandler(props.id)}}>DELETE</button>
+        props.deleteHandler(props.id)}}>
+          <DeleteRoundedIcon/>
+        </button>
     </div>
   );
 }
